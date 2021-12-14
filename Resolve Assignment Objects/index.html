@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <script src="objects.js"></script>
+                    
+    <script>
+   
+    function testVariable() {
+            var strText = document.getElementById("fname").value;          
+            var strText1 = document.getElementById("lname").value;
+            var strText2 = document.getElementById("email").value;
+            var strText3 = document.getElementById("male").value;
+            var strText4 = document.getElementById("fmale").value;
+            var result = strText + ' ' + strText1 + '' + strText2 + '' + strText3+ '' +strText4;
+            document.getElementById('spanResult').textContent = result;
+             }
+
+             
+    </script>
+</head>
+
+<body>
+
+    <h1>Sign Up Form </h1>
+    <label>First Name :</label>
+    <input type="text" id="fname" />
+    <label>Last Name :</label>
+    <input type="text" id="lname" /><br>
+    
+    <br>
+    <label>Email :</label>
+    <input type="text" id="email" /><br>
+    
+    <br>
+    <label>Password :</label>
+    <input type="password" id="pswd" />
+    <label>Confirm Password :</label>
+    <input type="password" id="cpswd" /><br>
+    <br>
+
+    <label >Gender :</label><br>
+    <input type="radio" name="gender" id="male">Male
+    <input type="radio" name="gender" id="fmale">Female
+       
+    <button  onclick="testVariable()">Submit</button><br>
+    <span id="spanResult"> </span>
+
+</body>
+</html>
